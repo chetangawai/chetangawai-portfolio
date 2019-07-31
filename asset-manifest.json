@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2cce8147.chunk.css",
+    "main.js": "/static/js/main.a18bd353.chunk.js",
+    "main.js.map": "/static/js/main.a18bd353.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.f79d704e.chunk.css": "/static/css/2.f79d704e.chunk.css",
+    "static/js/2.94aa32fd.chunk.js": "/static/js/2.94aa32fd.chunk.js",
+    "static/js/2.94aa32fd.chunk.js.map": "/static/js/2.94aa32fd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9e312fc80f1b9cdce8670b4dd51affa2.js": "/precache-manifest.9e312fc80f1b9cdce8670b4dd51affa2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.f79d704e.chunk.css.map": "/static/css/2.f79d704e.chunk.css.map",
+    "static/css/main.2cce8147.chunk.css.map": "/static/css/main.2cce8147.chunk.css.map",
+    "static/media/ChetanGawaiResume.pdf": "/static/media/ChetanGawaiResume.98615303.pdf",
+    "static/media/mypic.jpg": "/static/media/mypic.7eb5e95f.jpg",
+    "static/media/index.css": "/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  }
+}
