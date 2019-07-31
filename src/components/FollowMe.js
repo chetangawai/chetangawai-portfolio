@@ -62,7 +62,7 @@ export default function FollowMe() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://medium.com/@chetansgawai"
+              href="https://dev.to/chetangawai"
               className={classes.socialMediaLinks}
             >
               <i className="fab fa-dev"></i>

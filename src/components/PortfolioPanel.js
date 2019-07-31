@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import NavigationBar from './NavigationBar';
 import DrawerContainer from './DrawerContainer';
 
-const drawerWidth = 340;
+const drawerWidth = 320;
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex'

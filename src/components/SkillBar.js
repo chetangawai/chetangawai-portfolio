@@ -43,7 +43,7 @@ export default function CustomizedProgressBars(props) {
 
   return (
     <div className={classes.root}>
-      {props.name}
+      <h3>{props.name}</h3>
       <BorderLinearProgress
         className={classes.margin}
         variant="determinate"

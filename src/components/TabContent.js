@@ -32,7 +32,7 @@ export default function TabContent(props) {
   const theme = useTheme();
 
   function handleChange(event, newValue) {
-    props.handleChange(newValue);
+    props.onHandleChange(newValue);
   }
 
   const mainContent = (

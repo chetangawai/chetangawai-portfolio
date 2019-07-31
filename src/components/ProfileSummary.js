@@ -8,21 +8,18 @@ import Typography from '@material-ui/core/Typography';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationIcon from '@material-ui/icons/LocationOn';
 
-const useStyles = makeStyles(theme => ({
-  media: {
-    height: 400,
-    width: 340
-  },
-  root: {
-    width: 440
-  },
-  wrapIcon: {
-    verticalAlign: 'middle',
-    display: 'inline-flex'
-  }
-}));
+export default function MediaCard(props) {
+  const useStyles = makeStyles(theme => ({
+    media: {
+      height: 300,
+      width: props.drawerWidth
+    },
 
-export default function MediaCard() {
+    wrapIcon: {
+      verticalAlign: 'middle',
+      display: 'inline-flex'
+    }
+  }));
   const classes = useStyles();
 
   return (
@@ -38,13 +35,12 @@ export default function MediaCard() {
             <Typography gutterBottom variant="h5">
               Chetan Gawai
             </Typography>
-            <Typography gutterBottom variant="subtitle1" color="textSecondary">
+            <Typography gutterBottom variant="subtitle1">
               Software Engineer | Javascript, ReactJS
             </Typography>
             <Typography
               gutterBottom
               variant="subtitle1"
-              color="textSecondary"
               className={classes.wrapIcon}
             >
               <EmailIcon /> &nbsp; chetansgawai@gmail.com
@@ -52,7 +48,6 @@ export default function MediaCard() {
             <Typography
               gutterBottom
               variant="subtitle1"
-              color="textSecondary"
               className={classes.wrapIcon}
             >
               <LocationIcon /> &nbsp;Bangalore, India

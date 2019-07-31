@@ -1,16 +1,28 @@
 import React from 'react';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles(theme => ({
+  cardTitle: {
+    textDecoration: 'none',
+    color: 'rgba(0, 0, 0, 0.87)'
+  }
+}));
 
 export default function WorkExperience() {
   const cardStyle = {
     background: 'rgb(231, 226, 247)',
     padding: '20px',
     borderRadius: ' 8px',
-    color: '#220f5f',
+    color: 'rgba(0, 0, 0, 0.87)',
     boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)'
   };
-  const dateStyle = { color: '#e86971' };
-  const dateInnerStyle = { background: '#61b8ff', color: 'rgb(8, 84, 97)' };
+  const dateStyle = { color: 'rgba(0, 0, 0, 0.87)' };
+  const dateInnerStyle = {
+    background: 'rgb(231, 226, 247)',
+    color: 'rgba(0, 0, 0, 0.87)'
+  };
+  const classes = useStyles();
 
   return (
     <div style={{ alignItems: 'center' }}>
@@ -23,7 +35,15 @@ export default function WorkExperience() {
           bodyContainerStyle={cardStyle}
         >
           <h3>
-            Senior Software Engineer, DynaCommerce (Acquired by TechMahindra)
+            Senior Software Engineer,{' '}
+            <a
+              href="https://www.dynacommerce.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.cardTitle}
+            >
+              DynaCommerce (Acquired by TechMahindra)
+            </a>
           </h3>
           <h4>Javascript, ReactJs, Webpack, Babel, Mocha, Chai, Enzyme</h4>
           <p>
@@ -37,8 +57,15 @@ export default function WorkExperience() {
             </li>
             <li>
               Customised{' '}
-              <a href="https://react.semantic-ui.com/">React Semantic Ui</a> to
-              develop resuable components.
+              <a
+                href="https://react.semantic-ui.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={classes.cardTitle}
+              >
+                React Semantic UI
+              </a>{' '}
+              to develop resuable components.
             </li>
           </ul>
         </TimelineItem>
@@ -49,7 +76,17 @@ export default function WorkExperience() {
           dateInnerStyle={dateInnerStyle}
           bodyContainerStyle={cardStyle}
         >
-          <h3>Senior Software Engineer, LearningMate</h3>
+          <h3>
+            Senior Software Engineer,{' '}
+            <a
+              href="https://ww2.learningmate.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.cardTitle}
+            >
+              LearningMate
+            </a>
+          </h3>
           <h4>
             Javascript, NodeJS, ExpressJs, Angular2, ReadiumJs, Basics of AWS
             (Lambda,S3 ), Mocha
@@ -83,7 +120,17 @@ export default function WorkExperience() {
           bodyContainerStyle={cardStyle}
           dateText="January 2014 – October 2016"
         >
-          <h3>Software Engineer, LetsIntern</h3>
+          <h3>
+            Software Engineer,{' '}
+            <a
+              href="https://www.letsintern.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.cardTitle}
+            >
+              LetsIntern
+            </a>
+          </h3>
           <h4>NodeJs, PHP, AngularJS, Jquery, SEO</h4>
           <p>
             Letsintern (acquired by Aspiring Minds) is a linkedin for students
@@ -100,7 +147,17 @@ export default function WorkExperience() {
           bodyContainerStyle={cardStyle}
           dateText="January 2013 – January 2014"
         >
-          <h3>Software Developer, Innoplexus</h3>
+          <h3>
+            Junior Software Developer,{' '}
+            <a
+              href="https://www.innoplexus.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.cardTitle}
+            >
+              Innoplexus
+            </a>
+          </h3>
           <h4>PHP, Javascript, Jquery</h4>
           <p>
             Innoplexus is driven to help organizations manage innovation and

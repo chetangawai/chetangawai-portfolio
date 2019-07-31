@@ -19,7 +19,8 @@ export default function NavigationBar(props) {
       marginLeft: props.drawerWidth,
       [theme.breakpoints.up('sm')]: {
         width: `calc(100% - ${props.drawerWidth}px)`
-      }
+      },
+      backgroundColor: 'rgb(34, 15, 95)'
     },
     toolbar: theme.mixins.toolbar,
     content: {
@@ -35,7 +36,13 @@ export default function NavigationBar(props) {
       }
     },
     tab: {
-      fontSize: 16
+      fontSize: 14
+    },
+    navBar: {
+      color: 'rgb(34, 15, 95)'
+    },
+    indicator: {
+      color: 'rgb(231, 226, 247)'
     }
   }));
   const classes = useStyles();

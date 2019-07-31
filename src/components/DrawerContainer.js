@@ -6,7 +6,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
 import ProfileSummary from './ProfileSummary';
 import FollowMe from './FollowMe';
-import Resume from './Resume';
 
 export default function DrawerContainer(props) {
   const { container } = props;
@@ -46,9 +45,8 @@ export default function DrawerContainer(props) {
 
   const drawer = (
     <div className={classes.mainDrawer}>
-      <ProfileSummary />
+      <ProfileSummary drawerWidth={props.drawerWidth} />
       <FollowMe />
-      <Resume />
     </div>
   );
 
