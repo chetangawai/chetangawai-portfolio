@@ -12,12 +12,21 @@ export default function MediaCard(props) {
   const useStyles = makeStyles(theme => ({
     media: {
       height: 300,
-      width: props.drawerWidth
+      width: props.drawerWidth,
+      backgroundColor: 'rgb(34, 15, 95)',
+      color: 'inherit'
+    },
+    wrapIcon: {
+      alignItems: 'center',
+      display: 'flex',
+      color: '#BCB8CF'
+    },
+    cardTextColor: {
+      color: '#BCB8CF'
     },
 
-    wrapIcon: {
-      verticalAlign: 'middle',
-      display: 'inline-flex'
+    cardContent: {
+      backgroundColor: 'rgb(34, 15, 95)'
     }
   }));
   const classes = useStyles();
@@ -31,11 +40,12 @@ export default function MediaCard(props) {
             image={require('./../images/mypic.jpg')}
             className={classes.media}
           />
-          <CardContent>
-            <Typography gutterBottom variant="h5">
-              Chetan Gawai
-            </Typography>
-            <Typography gutterBottom variant="subtitle1">
+          <CardContent className={classes.cardContent}>
+            <Typography
+              gutterBottom
+              variant="body1"
+              className={classes.cardTextColor}
+            >
               Software Engineer | Javascript, ReactJS
             </Typography>
             <Typography
