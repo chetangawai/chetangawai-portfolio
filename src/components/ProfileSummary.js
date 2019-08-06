@@ -7,24 +7,29 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationIcon from '@material-ui/icons/LocationOn';
+import PropTypes from 'prop-types';
 
-export default function MediaCard(props) {
+export default function ProfileSummary(props) {
   const useStyles = makeStyles(theme => ({
     media: {
-      height: 300,
+      height: 340,
       width: props.drawerWidth,
       backgroundColor: 'rgb(34, 15, 95)',
       color: 'inherit'
     },
     wrapIcon: {
       alignItems: 'center',
+      justifyContent: 'center',
       display: 'flex',
       color: '#BCB8CF'
     },
     cardTextColor: {
-      color: '#BCB8CF'
+      color: '#BCB8CF',
+      textDecoration: 'none'
     },
-
+    subtitle: {
+      fontSize: '1.10rem'
+    },
     cardContent: {
       backgroundColor: 'rgb(34, 15, 95)'
     }
@@ -42,23 +47,48 @@ export default function MediaCard(props) {
           />
           <CardContent className={classes.cardContent}>
             <Typography
-              gutterBottom
-              variant="body1"
+              variant="h4"
               className={classes.cardTextColor}
+              align="center"
+              gutterBottom
             >
-              Software Engineer | Javascript, ReactJS
+              Chetan Gawai
             </Typography>
             <Typography
               gutterBottom
               variant="subtitle1"
-              className={classes.wrapIcon}
+              className={classes.cardTextColor + ' ' + classes.subtitle}
+              align="center"
             >
-              <EmailIcon /> &nbsp; chetansgawai@gmail.com
+              Sr Software Engineer
             </Typography>
             <Typography
               gutterBottom
               variant="subtitle1"
-              className={classes.wrapIcon}
+              className={classes.cardTextColor + ' ' + classes.subtitle}
+              align="center"
+            >
+              Javascript | ReactJS | NodeJS
+            </Typography>
+            <Typography
+              gutterBottom
+              variant="subtitle1"
+              className={classes.wrapIcon + ' ' + classes.subtitle}
+              align="center"
+            >
+              <EmailIcon /> &nbsp;{' '}
+              <a
+                href="mailto:chetansgawai@gmail.com"
+                className={classes.cardTextColor}
+              >
+                chetansgawai@gmail.com
+              </a>
+            </Typography>
+            <Typography
+              gutterBottom
+              variant="subtitle1"
+              className={classes.wrapIcon + ' ' + classes.subtitle}
+              align="center"
             >
               <LocationIcon /> &nbsp;Bangalore, India
             </Typography>
@@ -68,3 +98,6 @@ export default function MediaCard(props) {
     </div>
   );
 }
+ProfileSummary.propTypes = {
+  drawerWidth: PropTypes.number.isRequired
+};

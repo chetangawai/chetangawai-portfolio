@@ -1,27 +1,19 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import SkillBar from './SkillBar';
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-    alignItems: 'center'
-  },
-  margin: {
-    margin: theme.spacing(1),
-    height: 30
-  }
-}));
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 export default function CustomizedProgressBars() {
-  const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <Container maxWidth="md">
+      <Typography variant="h3" gutterBottom align="center">
+        Skill set
+      </Typography>
       <SkillBar completionValue={85} name={'Javascript'} />
       <SkillBar completionValue={85} name={'ReactJs'} />
       <SkillBar completionValue={80} name={'NodeJs'} />
       <SkillBar completionValue={70} name={'Angular'} />
       <SkillBar completionValue={75} name={'JQuery'} />
-    </div>
+    </Container>
   );
 }

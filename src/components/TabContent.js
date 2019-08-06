@@ -40,6 +40,7 @@ export default function TabContent(props) {
       axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
       index={props.value}
       onChangeIndex={handleChange}
+      animateHeight
     >
       <TabContainer dir={theme.direction}>
         <Aboutme />
@@ -63,3 +64,8 @@ export default function TabContent(props) {
     </div>
   );
 }
+TabContent.propTypes = {
+  drawerWidth: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+  onHandleChange: PropTypes.func.isRequired
+};

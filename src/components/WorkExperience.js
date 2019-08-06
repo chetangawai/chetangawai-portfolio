@@ -1,6 +1,8 @@
 import React from 'react';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles(theme => ({
   cardTitle: {
@@ -25,7 +27,10 @@ export default function WorkExperience() {
   const classes = useStyles();
 
   return (
-    <div style={{ alignItems: 'center' }}>
+    <Container maxWidth="md">
+      <Typography variant="h3" gutterBottom align="center">
+        Work Experience
+      </Typography>
       <Timeline lineColor={'#ddd'}>
         <TimelineItem
           key="001"
@@ -166,6 +171,6 @@ export default function WorkExperience() {
           <p>Handled backEnd of project using PHP.</p>
         </TimelineItem>
       </Timeline>
-    </div>
+    </Container>
   );
 }

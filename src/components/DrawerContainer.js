@@ -1,12 +1,7 @@
 import React from 'react';
-import clsx from 'clsx';
 import { makeStyles, useTheme, withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ProfileSummary from './ProfileSummary';
@@ -18,6 +13,7 @@ import WorkIcon from '@material-ui/icons/Work';
 import GradeIcon from '@material-ui/icons/Grade';
 import TabContent from './TabContent';
 import Hidden from '@material-ui/core/Hidden';
+import PropTypes from 'prop-types';
 
 export default function DrawerContainer(props) {
   const useStyles = makeStyles(theme => ({
@@ -53,7 +49,8 @@ export default function DrawerContainer(props) {
       [theme.breakpoints.up('sm')]: {
         width: props.drawerWidth,
         flexShrink: 0
-      }
+      },
+      backgroundColor: 'white'
     },
     drawerPaper: {
       width: props.drawerWidth,
@@ -87,6 +84,10 @@ export default function DrawerContainer(props) {
       [theme.breakpoints.up('sm')]: {
         marginLeft: props.drawerWidth
       }
+    },
+    tab: {
+      fontSize: '0.95rem',
+      maxWidth: 'none'
     }
   }));
 
@@ -113,17 +114,7 @@ export default function DrawerContainer(props) {
 
   const drawer = (
     <React.Fragment>
-      <div className={classes.drawerHeader}>
-        <Typography variant="h4" className={classes.textColor}>
-          Chetan Gawai
-        </Typography>
-      </div>
-      <Divider />
-      <div
-        style={{
-          display: 'flex'
-        }}
-      >
+      <div>
         <VerticalTabs value={value} onChange={handleChange}>
           <ProfileSummary drawerWidth={props.drawerWidth} />
           <Tab
@@ -157,13 +148,7 @@ export default function DrawerContainer(props) {
 
   return (
     <div className={classes.root}>
-      <CssBaseline />
-      <AppBar
-        position="fixed"
-        className={clsx(classes.appBar, {
-          [classes.appBarShift]: open
-        })}
-      >
+      <nav className={classes.drawer}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -175,10 +160,6 @@ export default function DrawerContainer(props) {
             <MenuIcon />
           </IconButton>
         </Toolbar>
-      </AppBar>
-
-      <nav className={classes.drawer} aria-label="mailbox folders">
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
           <Drawer
             variant="temporary"
@@ -209,7 +190,6 @@ export default function DrawerContainer(props) {
       </nav>
 
       <main className={classes.content}>
-        <div className={classes.toolbar} />
         <TabContent
           value={value}
           onHandleChange={handleChange}
@@ -219,3 +199,6 @@ export default function DrawerContainer(props) {
     </div>
   );
 }
+DrawerContainer.propTypes = {
+  drawerWidth: PropTypes.number.isRequired
+};

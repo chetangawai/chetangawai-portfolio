@@ -2,6 +2,8 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Resume from './Resume';
 import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import FollowMe from './FollowMe';
 
 const useStyles = makeStyles(theme => ({
   noLine: {
@@ -14,14 +16,16 @@ export default function Aboutme() {
   const classes = useStyles();
 
   return (
-    <div style={{ alignItems: 'center' }}>
-      <Typography variant="h3" gutterBottom>
+    <Container maxWidth="md">
+      <Typography variant="h3" gutterBottom align="center">
         Hey, I am Chetan Gawai.
       </Typography>
-      <Typography variant="h4" gutterBottom>
-        Software Engineer based in Bangalore, India.
-      </Typography>
-      <Typography variant="h6" gutterBottom color="textSecondary">
+      <Typography
+        variant="h6"
+        gutterBottom
+        color="textSecondary"
+        align="center"
+      >
         I have 6+ years of experience working professionally. Skilled in
         Javascript and related technologies like ReactJS, AngularJS, NodeJs,
         JQuery. Contributed to
@@ -36,7 +40,12 @@ export default function Aboutme() {
         having reached <b>105K</b> people with <b>1600+</b> reputations. I love
         to work with startups.
       </Typography>
-      <Typography variant="h6" gutterBottom color="textSecondary">
+      <Typography
+        variant="h6"
+        gutterBottom
+        color="textSecondary"
+        align="center"
+      >
         This website is developed by me using{' '}
         <a
           href="https://reactjs.org/"
@@ -55,7 +64,12 @@ export default function Aboutme() {
           Material UI framework.{' '}
         </a>
       </Typography>
-      <Typography variant="h6" gutterBottom color="textSecondary">
+      <Typography
+        variant="h6"
+        gutterBottom
+        color="textSecondary"
+        align="center"
+      >
         <p>
           When I am not coding, you will find me in &nbsp;
           <i
@@ -70,8 +84,9 @@ export default function Aboutme() {
           ></i>
           plants.
         </p>
+        <Resume />
+        <FollowMe />
       </Typography>
-      <Resume />
-    </div>
+    </Container>
   );
 }

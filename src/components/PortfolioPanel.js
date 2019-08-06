@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import DrawerContainer from './DrawerContainer';
 
@@ -10,7 +9,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function PortfolioPanel(props) {
+function PortfolioPanel() {
   const classes = useStyles();
 
   return (
@@ -19,13 +18,5 @@ function PortfolioPanel(props) {
     </div>
   );
 }
-
-PortfolioPanel.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  container: PropTypes.object
-};
 
 export default PortfolioPanel;
