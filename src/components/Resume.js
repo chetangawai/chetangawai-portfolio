@@ -35,6 +35,7 @@ export default function Resume() {
           rel="noopener noreferrer"
           href={require('./../pdfs/ChetanGawaiResume.pdf')}
           className={classes.noLine}
+          download
         >
           <Button
             variant="contained"

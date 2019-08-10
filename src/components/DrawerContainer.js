@@ -38,7 +38,7 @@ export default function DrawerContainer(props) {
     },
     menuButton: {
       marginRight: theme.spacing(2),
-      [theme.breakpoints.up('sm')]: {
+      [theme.breakpoints.up('md')]: {
         display: 'none'
       }
     },
@@ -46,8 +46,12 @@ export default function DrawerContainer(props) {
       display: 'none'
     },
     drawer: {
-      [theme.breakpoints.up('sm')]: {
+      [theme.breakpoints.up('md')]: {
         width: props.drawerWidth,
+        flexShrink: 0
+      },
+      [theme.breakpoints.down('sm')]: {
+        width: 0,
         flexShrink: 0
       },
       backgroundColor: 'white'
@@ -98,12 +102,13 @@ export default function DrawerContainer(props) {
 
   function handleChange(event, newValue) {
     setValue(newValue);
+    setOpen(false);
   }
-  function handleDrawerOpen() {
+  function handleToggleDrawer() {
     setOpen(!open);
   }
 
-  const VerticalTabs = withStyles(theme => ({
+  const VerticalTabs = withStyles(() => ({
     flexContainer: {
       flexDirection: 'column'
     },
@@ -153,30 +158,30 @@ export default function DrawerContainer(props) {
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            onClick={handleDrawerOpen}
+            onClick={handleToggleDrawer}
             edge="start"
             className={classes.menuButton}
           >
             <MenuIcon />
           </IconButton>
         </Toolbar>
-        <Hidden smUp implementation="css">
+        <Hidden mdUp implementation="css">
           <Drawer
             variant="temporary"
             anchor={theme.direction === 'rtl' ? 'right' : 'left'}
             open={open}
-            onClose={handleDrawerOpen}
+            onClose={handleToggleDrawer}
             classes={{
               paper: classes.drawerPaper
             }}
             ModalProps={{
-              keepMounted: true // Better open performance on mobile.
+              keepMounted: true
             }}
           >
             {drawer}
           </Drawer>
         </Hidden>
-        <Hidden xsDown implementation="css">
+        <Hidden smDown implementation="css">
           <Drawer
             classes={{
               paper: classes.drawerPaper

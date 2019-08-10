@@ -1,19 +1,11 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import DrawerContainer from './DrawerContainer';
 
-const drawerWidth = 320;
-const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'flex'
-  }
-}));
+const drawerWidth = 300;
 
 function PortfolioPanel() {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
+    <div>
       <DrawerContainer drawerWidth={drawerWidth} />
     </div>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { lighten, makeStyles, withStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import PropTypes from 'prop-types';
 
 const BorderLinearProgress = withStyles({
   root: {
@@ -24,7 +25,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function CustomizedProgressBars(props) {
+export default function SkillBar(props) {
   const classes = useStyles();
   const [completed, setCompleted] = React.useState(0);
 
@@ -53,3 +54,7 @@ export default function CustomizedProgressBars(props) {
     </div>
   );
 }
+SkillBar.propTypes = {
+  name: PropTypes.string.isRequired,
+  completionValue: PropTypes.number.isRequired
+};

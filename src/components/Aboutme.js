@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import FollowMe from './FollowMe';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   noLine: {
     textDecoration: 'none',
     color: 'rgb(34, 15, 95)'

@@ -41,6 +41,7 @@ export default function TabContent(props) {
       index={props.value}
       onChangeIndex={handleChange}
       animateHeight
+      containerStyle={{ flexFlow: 'column wrap' }}
     >
       <TabContainer dir={theme.direction}>
         <Aboutme />

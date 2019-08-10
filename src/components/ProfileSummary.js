@@ -10,7 +10,7 @@ import LocationIcon from '@material-ui/icons/LocationOn';
 import PropTypes from 'prop-types';
 
 export default function ProfileSummary(props) {
-  const useStyles = makeStyles(theme => ({
+  const useStyles = makeStyles(() => ({
     media: {
       height: 340,
       width: props.drawerWidth,
