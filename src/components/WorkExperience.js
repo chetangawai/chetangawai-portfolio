@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   cardTitle: {
     textDecoration: 'none',
     color: 'rgba(0, 0, 0, 0.87)'

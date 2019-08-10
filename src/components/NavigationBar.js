@@ -6,6 +6,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import SchoolIcon from '@material-ui/icons/School';
 import WorkIcon from '@material-ui/icons/Work';
 import GradeIcon from '@material-ui/icons/Grade';
+import PropTypes from 'prop-types';
 
 export default function NavigationBar(props) {
   const useStyles = makeStyles(theme => ({
@@ -70,3 +71,6 @@ export default function NavigationBar(props) {
     </div>
   );
 }
+NavigationBar.propTypes = {
+  drawerWidth: PropTypes.number.isRequired
+};

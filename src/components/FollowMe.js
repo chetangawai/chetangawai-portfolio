@@ -63,6 +63,14 @@ export default function FollowMe() {
           >
             <i className={classes.socialmediaIcons + ' fab fa-linkedin'}></i>
           </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/gharwalaswad/"
+            className={classes.socialMediaLinks}
+          >
+            <i className={classes.socialmediaIcons + ' fab fa-instagram'}></i>
+          </a>
         </div>
       </Typography>
     </Container>
