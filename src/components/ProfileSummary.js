@@ -90,7 +90,7 @@ export default function ProfileSummary(props) {
               className={classes.wrapIcon + ' ' + classes.subtitle}
               align="center"
             >
-              <LocationIcon /> &nbsp;Bangalore, India
+              <LocationIcon /> &nbsp;Pune, India
             </Typography>
           </CardContent>
         </CardActionArea>
