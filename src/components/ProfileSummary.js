@@ -60,7 +60,7 @@ export default function ProfileSummary(props) {
               className={classes.cardTextColor + ' ' + classes.subtitle}
               align="center"
             >
-              Sr Software Engineer @BigBinary
+              Sr Software Engineer @Saeloun
             </Typography>
             <Typography
               gutterBottom

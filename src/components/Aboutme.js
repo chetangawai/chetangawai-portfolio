@@ -1,6 +1,5 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Resume from './Resume';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import FollowMe from './FollowMe';
@@ -18,7 +17,7 @@ export default function Aboutme() {
   return (
     <Container maxWidth="md">
       <Typography variant="h3" gutterBottom align="center">
-        Hey, I am Chetan Gawai.
+        Hey, I am Chetan.
       </Typography>
       <Typography
         variant="h6"
@@ -84,7 +83,6 @@ export default function Aboutme() {
           ></i>
           plants.
         </p>
-        <Resume />
         <FollowMe />
       </Typography>
     </Container>
