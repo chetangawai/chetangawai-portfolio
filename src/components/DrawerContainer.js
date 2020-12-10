@@ -14,6 +14,7 @@ import GradeIcon from '@material-ui/icons/Grade';
 import TabContent from './TabContent';
 import Hidden from '@material-ui/core/Hidden';
 import PropTypes from 'prop-types';
+import BookmarkIcon from '@material-ui/icons/Bookmark';
 
 export default function DrawerContainer(props) {
   const useStyles = makeStyles(theme => ({
@@ -145,6 +146,12 @@ export default function DrawerContainer(props) {
             icon={<SchoolIcon />}
             className={classes.tab}
             value={3}
+          />
+          <Tab
+            label="Blog"
+            icon={<BookmarkIcon />}
+            className={classes.tab}
+            value={4}
           />
         </VerticalTabs>
       </div>

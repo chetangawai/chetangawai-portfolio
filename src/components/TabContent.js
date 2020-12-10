@@ -4,6 +4,7 @@ import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Aboutme from './Aboutme';
+import Blog from './Blog';
 import WorkExperience from './WorkExperience';
 import Education from './Education';
 import Skills from './Skills';
@@ -54,6 +55,9 @@ export default function TabContent(props) {
       </TabContainer>
       <TabContainer dir={theme.direction}>
         <Education />
+      </TabContainer>
+      <TabContainer dir={theme.direction}>
+        <Blog />
       </TabContainer>
     </SwipeableViews>
   );

@@ -67,6 +67,7 @@ export default function NavigationBar(props) {
         />
         <Tab label="Skills" icon={<GradeIcon />} className={classes.tab} />
         <Tab label="Education" icon={<SchoolIcon />} className={classes.tab} />
+        <Tab label="Blogs" icon={<PersonIcon />} className={classes.tab} />
       </Tabs>
     </div>
   );
