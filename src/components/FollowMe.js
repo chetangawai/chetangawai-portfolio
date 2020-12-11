@@ -16,6 +16,10 @@ const useStyles = makeStyles(theme => ({
   },
   socialmediaIcons: {
     color: 'rgb(34, 15, 95)'
+  },
+  logo: {
+    width: '30px',
+    height: '30px'
   }
 }));
 
@@ -70,6 +74,17 @@ export default function FollowMe() {
             className={classes.socialMediaLinks}
           >
             <i className={classes.socialmediaIcons + ' fab fa-instagram'}></i>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.gharwalaswad.com/"
+            className={classes.socialMediaLinks}
+          >
+            <img
+              src={require('./../images/logo.png')}
+              className={classes.logo}
+            />
           </a>
         </div>
       </Typography>
