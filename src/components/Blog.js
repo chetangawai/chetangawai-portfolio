@@ -31,9 +31,48 @@ export default function Blog() {
 
       <List style={{ alignItems: 'center' }} dense>
         <ListItem component="button" divider className={classes.root}>
-          <Link href="https://blog.bigbinary.com/2020/09/29/react-17-delegates-events-to-root-instead-of-document.html">
+          <Link href="https://blog.saeloun.com/category/es2022/">
+            <ArrowForwardIosIcon /> ECMAScript 2022 features
+          </Link>
+        </ListItem>
+        <ListItem component="button" divider className={classes.root}>
+          <Link href="https://blog.saeloun.com/category/react-18/">
+            <ArrowForwardIosIcon /> React 18 features
+          </Link>
+        </ListItem>
+        <ListItem component="button" divider className={classes.root}>
+          <Link href="https://blog.saeloun.com/category/react-17/">
+            <ArrowForwardIosIcon /> React 17 features
+          </Link>
+        </ListItem>
+        <ListItem component="button" divider className={classes.root}>
+          <Link href="https://blog.saeloun.com/2022/03/03/infinite-scroll-with-pagination">
+            <ArrowForwardIosIcon />
+            Improve the performance of dropdown containing large data using
+            Virtualization
+          </Link>
+        </ListItem>
+        <ListItem component="button" divider className={classes.root}>
+          <Link href="https://blog.saeloun.com/2022/02/17/how-to-integrate-react-app-with-google-analytics">
+            <ArrowForwardIosIcon /> How to integrate Google Analytics with React
+            JS application?
+          </Link>
+        </ListItem>
+        <ListItem component="button" divider className={classes.root}>
+          <Link href="https://blog.saeloun.com/2022/01/27/tips-to-make-react-accessible">
+            <ArrowForwardIosIcon />
+            Tips to make React application more accessible
+          </Link>
+        </ListItem>
+        <ListItem component="button" divider className={classes.root}>
+          <Link href="https://bigbinary.com/blog/authors/chetangawai">
             <ArrowForwardIosIcon /> React 17 delegates events to root instead of
             document
+          </Link>
+        </ListItem>
+        <ListItem component="button" className={classes.root}>
+          <Link href="https://medium.com/@chetansgawai/optional-chaining-a-new-feature-in-es2020-es11-f38b872895a6">
+            <ArrowForwardIosIcon /> ECMAScript 2021 - Optional chaining
           </Link>
         </ListItem>
         <ListItem component="button" divider className={classes.root}>
@@ -55,8 +94,9 @@ export default function Blog() {
           </Link>
         </ListItem>
         <ListItem component="button" className={classes.root}>
-          <Link href="https://medium.com/@chetansgawai/optional-chaining-a-new-feature-in-es2020-es11-f38b872895a6">
-            <ArrowForwardIosIcon /> ES11 - Optional chaining
+          <Link href="https://blog.saeloun.com/2022/03/07/our-remote-workstation">
+            <ArrowForwardIosIcon /> Sneak peak into the workstation of Saeloun
+            team!
           </Link>
         </ListItem>
       </List>

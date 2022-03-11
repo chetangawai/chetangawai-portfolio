@@ -148,7 +148,7 @@ export default function DrawerContainer(props) {
             value={3}
           />
           <Tab
-            label="Blog"
+            label="Blogs"
             icon={<BookmarkIcon />}
             className={classes.tab}
             value={4}

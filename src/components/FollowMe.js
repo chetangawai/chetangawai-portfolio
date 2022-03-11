@@ -84,6 +84,7 @@ export default function FollowMe() {
             <img
               src={require('./../images/logo.png')}
               className={classes.logo}
+              alt="logo"
             />
           </a>
         </div>

@@ -49,9 +49,7 @@ export default function Education() {
               Pune Institute of Computer Technology, Pune, Maharashtra, India
             </a>
           </h3>
-          <p>
-            Completed Bachelor of Engineering (BE, Computers) with First Class.
-          </p>
+          <p>Completed Bachelor of Engineering (BE, Computers)</p>
         </TimelineItem>
         <TimelineItem
           key="002"
@@ -70,9 +68,7 @@ export default function Education() {
               R L T College of Science, Akola, Maharashtra, India
             </a>
           </h3>
-          <p>
-            Completed Higher Secondary Certification (HSC) with Distinction.
-          </p>
+          <p>Completed Higher Secondary Certification (HSC)</p>
         </TimelineItem>
         <TimelineItem
           key="003"
@@ -91,7 +87,7 @@ export default function Education() {
               Noel School, Akola, Maharashtra, India
             </a>
           </h3>
-          <p>Completed Secondary School Certificate (SSC) with Distinction.</p>
+          <p>Completed Secondary School Certificate (SSC)</p>
         </TimelineItem>
       </Timeline>
     </Container>
