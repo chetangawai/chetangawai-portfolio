@@ -25,7 +25,7 @@ export default function Aboutme() {
         color="textSecondary"
         align="center"
       >
-        I have 6+ years of experience working professionally. Skilled in
+        I have 9+ years of experience working professionally. Skilled in
         Javascript and related technologies like ReactJS, AngularJS, NodeJs,
         JQuery. Contributed to
         <a

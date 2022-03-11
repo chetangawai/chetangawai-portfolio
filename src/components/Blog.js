@@ -31,20 +31,29 @@ export default function Blog() {
 
       <List style={{ alignItems: 'center' }} dense>
         <ListItem component="button" divider className={classes.root}>
-          <Link href="https://blog.saeloun.com/category/es2022/">
-            <ArrowForwardIosIcon /> ECMAScript 2022 features
+          <Link href="https://blog.saeloun.com/authors/chetan">
+            <ArrowForwardIosIcon /> ECMAScript 2022 features, React 18 features,
           </Link>
         </ListItem>
         <ListItem component="button" divider className={classes.root}>
-          <Link href="https://blog.saeloun.com/category/react-18/">
-            <ArrowForwardIosIcon /> React 18 features
+          <Link href="https://blog.saeloun.com/2021/04/06/react-17-removes-event-pooling-in-modern-system">
+            <ArrowForwardIosIcon /> React 17 removes event pooling in the modern
+            browsers
           </Link>
         </ListItem>
         <ListItem component="button" divider className={classes.root}>
-          <Link href="https://blog.saeloun.com/category/react-17/">
-            <ArrowForwardIosIcon /> React 17 features
+          <Link href="https://blog.saeloun.com/2021/03/02/react-17-removes-bubbling-from-onscroll">
+            <ArrowForwardIosIcon /> React 17 stops event bubbling in scroll
+            event
           </Link>
         </ListItem>
+        <ListItem component="button" divider className={classes.root}>
+          <Link href="https://blog.saeloun.com/2021/06/11/react-17-runs-useeffect-cleanup-asynchronously">
+            <ArrowForwardIosIcon /> React 17 runs useEffect cleanup functions
+            asynchronously
+          </Link>
+        </ListItem>
+
         <ListItem component="button" divider className={classes.root}>
           <Link href="https://blog.saeloun.com/2022/03/03/infinite-scroll-with-pagination">
             <ArrowForwardIosIcon />

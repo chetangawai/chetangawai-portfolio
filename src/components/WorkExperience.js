@@ -34,7 +34,74 @@ export default function WorkExperience() {
       <Timeline lineColor={'#ddd'}>
         <TimelineItem
           key="001"
-          dateText="April 2018 – Till Date"
+          dateText="February 2021 – Till Date"
+          style={dateStyle}
+          dateInnerStyle={dateInnerStyle}
+          bodyContainerStyle={cardStyle}
+        >
+          <h3>
+            Senior Software Engineer,{' '}
+            <a
+              href="https://www.saeloun.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.cardTitle}
+            >
+              Saeloun
+            </a>
+          </h3>
+          <h4>Javascript, ReactJs, ElectronJs</h4>
+          <p>
+            Saeloun is a Ruby on Rails Consulting and Development company,
+            helping small and large companies to get to their milestones.
+          </p>
+          <ul>
+            <li>
+              Worked on web and desktop app for the client Ooma. Worked on
+              adding the feature to manually update the ElectronJs application,
+              implemented bulk delete features using Kazoo API.
+            </li>
+            <li>
+              Headed the blog work for frontEnd. Consistently managed and posted
+              React, JavaScript, CSS blogs.
+            </li>
+          </ul>
+        </TimelineItem>
+        <TimelineItem
+          key="002"
+          dateText="September 2019 – Feb 2021"
+          style={dateStyle}
+          dateInnerStyle={dateInnerStyle}
+          bodyContainerStyle={cardStyle}
+        >
+          <h3>
+            Senior Software Engineer,{' '}
+            <a
+              href="https://www.bigbinary.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes.cardTitle}
+            >
+              BigBinary
+            </a>
+          </h3>
+          <h4>Javascript, ReactJs, Ruby</h4>
+          <p>
+            BigBinary is consulting company which builds web and mobile
+            applications.
+          </p>
+          <ul>
+            <li>Feature development as per requirements</li>
+            <li>
+              Worked on maintaining and implementing features on the legacy
+              codebase. It also included upgrading gems and libraries and
+              implementing CVE fixes.
+            </li>
+          </ul>
+        </TimelineItem>
+        <TimelineItem
+          key="003"
+          dateText="April 2018 – September 2019"
           style={dateStyle}
           dateInnerStyle={dateInnerStyle}
           bodyContainerStyle={cardStyle}
@@ -75,7 +142,7 @@ export default function WorkExperience() {
           </ul>
         </TimelineItem>
         <TimelineItem
-          key="002"
+          key="004"
           dateText="March 2017 – February 2018"
           style={dateStyle}
           dateInnerStyle={dateInnerStyle}
@@ -119,7 +186,7 @@ export default function WorkExperience() {
           </ul>
         </TimelineItem>
         <TimelineItem
-          key="003"
+          key="005"
           style={dateStyle}
           dateInnerStyle={dateInnerStyle}
           bodyContainerStyle={cardStyle}
@@ -146,7 +213,7 @@ export default function WorkExperience() {
           <p>Handled implementation of SEO suggestions.</p>
         </TimelineItem>
         <TimelineItem
-          key="004"
+          key="006"
           style={dateStyle}
           dateInnerStyle={dateInnerStyle}
           bodyContainerStyle={cardStyle}
